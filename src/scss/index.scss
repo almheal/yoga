@@ -28,6 +28,10 @@ body{
   line-height: 1.5;
 }
 
+html{
+  overflow-y: scroll;
+}
+
 .container{
   max-width: 1270px;
   padding: 0 15px;

@@ -42,10 +42,10 @@
     &.open{
       display: flex;
       transform: translate(-50%, -50%) scale(1);
-      animation: .5s scaleMenu linear;
+      animation: .4s scaleMenu linear;
     }
     &.hide{
-      animation: .5s hideScaleMenu linear;
+      animation: .4s hideScaleMenu linear;
     }
   }
 
