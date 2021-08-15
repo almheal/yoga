@@ -1,0 +1,156 @@
+.contact{
+  position: relative;
+  @media(max-width: 434px){
+    overflow: hidden;
+  }
+  &__inner{
+    padding: 80px 0 65px;
+    @media(max-width: 667px){
+      padding: 40px 0;
+    }
+  }
+  &__header{
+    position: relative;
+    z-index: 2;
+    max-width: 935px;
+    margin: 0 auto 65px;
+    text-align: center;
+  }
+  &__title{
+    font-weight: 600;
+    font-size: 58px;
+    margin-bottom: 40px;
+  }
+  &__body{
+    position: relative;
+    z-index: 2;
+    max-width: 935px;
+    margin: 0 auto;
+  }
+
+  &__decor{
+    position: absolute;
+
+    &_left-bottom{
+      width: 183px;
+      height: 166px;
+      left: 0;
+      bottom: 0;
+    }
+
+    &-1{
+      left: 0;
+      bottom: 0;
+    }
+
+    &-2{
+      left: 0;
+      bottom: 0;
+    }
+
+    &_left-top{
+      width: 300px;
+      height: 500px;
+      left: 30px;
+      top: 0;
+      z-index: -1;
+      @media(max-width: 667px){
+        height: 390px;
+        top: 100px;
+      }
+    }
+
+    &-3{
+      left: 0;
+      bottom: 0;
+      @media(max-width: 667px){
+        width: 240px;
+      }
+    }
+
+    &-4{
+      left: 0;
+      top: 0;
+      @media(max-width: 667px){
+        width: 100px;
+      }
+    }
+
+    &_right-top{
+      width: 150px;
+      height: 320px;
+      right: 0;
+      top: 0;
+    }
+
+    &-5{
+      right: 0;
+      top: -32px;
+      z-index: 1;
+      @media(max-width: 667px){
+        width: 95px;
+        top: -23px;
+      }
+    }
+
+    &-6{
+      right: 0;
+      top: 0;
+      @media(max-width: 667px){
+        width: 120px;
+      }
+    }
+
+    &-7{
+      right: 0;
+      top: 132px;
+      @media(max-width: 667px){
+        top: 100px;
+        height: 130px;
+      }
+    }
+
+    &_right-bottom{
+      width: 340px;
+      height: 390px;
+      right: 4%;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    &-8{
+      left: 0;
+      bottom: 60px;
+    }
+
+    &-9{
+      right: 34px;
+      bottom: 90px;
+    }
+
+    &-10{
+      left: 0;
+      bottom: -82px;
+    }
+  }
+}
+
+.contact-form{
+  text-align: center;
+  &__fieldset{
+    margin-bottom: 30px;
+  }
+  &__field{
+    padding: 20px 30px;
+    border: 2px solid #B0B0B0;
+    width: 100%;
+    font-size: 21px;
+    background-color: #EFEFEF;
+  }
+
+  &__textarea{
+    min-height: 140px;
+    resize: vertical;
+    max-height: 250px;
+  }
+}

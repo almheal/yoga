@@ -1,0 +1,96 @@
+.footer{
+  background-color: $dark-grey;
+  color: #fff;
+
+  &__inner{
+    display: flex;
+    padding: 65px 0;
+    @media(max-width: 824px){
+      flex-wrap: wrap;
+    }
+    @media(max-width: 434px){
+      padding: 40px 0;
+    }
+  }
+
+  &__company{
+    width: 20%;
+    margin-right: 70px;
+    @media(max-width: 824px){
+      width: calc((100% - 140px) / 3);
+    }
+    @media(max-width: 524px){
+      width: calc((100% - 20px) / 2);
+      margin-right: 20px;
+    }
+    @media(max-width: 434px){
+      width: 100%;
+      margin: 0 0 40px;
+      text-align: center;
+    }
+  }
+
+  &__title{
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  &__text{
+    margin-bottom: 15px;
+  }
+
+  &__column{
+    width: 15%;
+    margin-right: 70px;
+    @media(max-width: 824px){
+      width: calc((100% - 140px) / 3);
+      margin-bottom: 25px;
+      &:nth-child(3n){
+        margin-right: 0;
+      }
+    }
+    @media(max-width: 524px){
+      width: calc((100% - 20px) / 2);
+      margin-right: 0;
+      &:nth-child(odd){
+        margin-right: 20px;
+      }
+    }
+    @media(max-width: 434px){
+      width: 100%;
+      margin: 0 0 40px;
+      text-align: center;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-copy{
+    width: 35%;
+    @media(max-width: 434px){
+      text-align: center;
+      width: 100%;
+    }
+  }
+  &-list{
+    &__title{
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+  }
+  &-logo{
+    margin-bottom: 35px;
+  }
+}
+
+.footer-list__link{
+  margin-bottom: 10px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 300;
+  transition: color .2s;
+  &:hover{
+    color: $dark-pink;
+  }
+}

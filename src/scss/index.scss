@@ -1,0 +1,39 @@
+@import './reset';
+@import './variables';
+
+//components
+@import './components/header';
+@import './components/intro';
+@import './components/pregnant';
+@import './components/programs';
+@import './components/breathing';
+@import './components/join-now';
+@import './components/gallery';
+@import './components/video';
+@import './components/contact';
+@import './components/footer';
+
+//media
+@import './media';
+
+//elements
+@import './elements/buttons';
+@import './elements/titles';
+@import './elements/section';
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: $main-color;
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.container{
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}

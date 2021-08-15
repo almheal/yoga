@@ -1,0 +1,160 @@
+.intro{
+  position: relative;
+  @media(max-width: 434px){
+    overflow: hidden;
+  }
+  &__inner{
+    position: relative;
+    z-index: 2;
+    padding: 40px 0;
+  }
+  &__body{
+    display: flex;
+    @media(max-width: 676px){
+      flex-direction: column;
+    }
+    @media(max-width: 434px){
+      overflow: hidden;
+    }
+  }
+  &__column{
+    position: relative;
+    width: 50%;
+    height: 700px;
+    @media(max-width: 676px){
+      width: 100%;
+      height: 580px;
+      z-index: -1;
+    }
+    @media(max-width: 434px){
+      height: 430px;
+    }
+  }
+  &__img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    @media(max-width: 434px){
+      right: -50px;
+    }
+  }
+  &__content{
+    width: 50%;
+    padding-top: 60px;
+    @media(max-width: 676px){
+      width: 100%;
+      order: -1;
+    }
+  }
+  &__title{
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 40px;
+    @media(max-width: 1200px){
+      font-size: 60px;
+    }
+    @media(max-width: 676px){
+      font-size: 50px;
+    }
+  }
+  &__text{
+    margin-bottom: 4rem;
+  }
+  //decor-elements
+  &__decor{
+    position: absolute;
+    z-index: 10;
+    &-1{
+      left: 11%;
+      top: 24%;
+      @media(max-width: 434px){
+        width: 100px;
+      }
+    }
+    &-2{
+      bottom: 19%;
+      left: 19%;
+      @media(max-width: 434px){
+        width: 100px;
+        left: 0;
+        bottom: 0;
+      }
+    }
+    //left-top icons
+    &_left-top{
+      width: 275px;
+      height: 157px;
+      left: 0;
+      top: 0;
+    }
+
+    &-3{
+      @media(max-width: 676px){
+        width: 100px;
+      }
+    }
+    &-4{
+      @media(max-width: 676px){
+        width: 160px;
+      }
+    }
+    &-3,
+    &-4{
+      left: 0;
+      top: 0;
+    }
+
+    //right-top icons
+    &_right-top{
+      width: 280px;
+      height: 190px;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+    &-5{
+      right: 0;
+      top: 0;
+    }
+    &-6{
+      top: 5px;
+      right: 15px;
+    }
+    &-7{
+      top: 0;
+      right: 75px;
+    }
+
+    //right-bottom icons
+    &_right-bottom{
+      right: 0;
+      bottom: 0;
+      width: 200px;
+      height: 160px;
+    }
+    &-8{
+      @media(max-width: 434px){
+        width: 170px;
+      }
+    }
+    &-8,
+    &-10{
+      right: 0;
+      bottom: 0;
+    }
+    &-9{
+      right: 0;
+      bottom: 55px;
+      @media(max-width: 434px){
+        width: 95px;
+      }
+    }
+    &-10{
+      @media(max-width: 434px){
+        width: 130px;
+      }
+    }
+  }
+}

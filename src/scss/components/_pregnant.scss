@@ -1,0 +1,20 @@
+.pregnant{
+  background-image: url('../../img/pregnant-program/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media(max-width: 676px){
+    background-position: right;
+  }
+  &__inner{
+    padding: 170px 0;
+    display: flex;
+    align-items: center;
+    @media(max-width: 676px){
+      padding: 120px 0;
+    }
+    @media(max-width: 434px){
+      padding: 60px 0;
+    }
+  }
+}
